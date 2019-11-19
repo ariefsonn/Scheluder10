@@ -4,6 +4,25 @@ import { Text, View, TextInput, TouchableOpacity, FlatList, ScrollView, Image } 
 import DATA from '../../assets/item'
 
 export default class Staja extends Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            date: '',
+            waktu: ''
+
+        }
+    }
+
+    componentDidMount() { 
+        var hours = new Date().getHours();
+        let waktu = this.state.waktu
+
+        if (hours == waktu) {
+
+        }
+    }
+
     render(){
         return(
             <ScrollView>
@@ -17,7 +36,9 @@ export default class Staja extends Component {
                                     <Text style={{ fontSize: 18 }}>{item.name}</Text>
                                     <Text style={{ fontSize: 18 }}>{item.jam}</Text>
                                 </View>
-                                <Image source={require('../../assets/alaram3.jpg')} style={{ height: 15, width: 15, marginLeft: 120 }} />
+                                <View>
+                                <Image source={require('../../assets/alaram3.jpg')} style={{ height: 30, width: 30, marginLeft: 120, flexDirection: 'column' }}/>
+                                </View>
                             </View>
                         )
                     }} 
