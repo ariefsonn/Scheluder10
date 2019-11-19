@@ -37,7 +37,7 @@ export default class Staja extends Component {
                                     <Text style={{ fontSize: 18 }}>{item.jam}</Text>
                                 </View>
                                 <View>
-                                <Image source={require('../../assets/alaram3.jpg')} style={{ height: 30, width: 30, marginLeft: 120, flexDirection: 'column' }}/>
+                                <Image source={require('../../assets/alaram3.jpg')} style={{ height: 30, width: 30, marginLeft: 150, flexDirection: 'column', marginTop: 10 }}/>
                                 </View>
                             </View>
                         )

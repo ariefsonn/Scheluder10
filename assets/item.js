@@ -19,7 +19,7 @@ const DATA = [
     },
     {
         id: 4,
-        name: 'Mata Pelajaran',
+        name: 'MataPel',
         jam: '08-00 AM',
         image: 'http://www.quranreading.com/blog/wp-content/uploads/2018/10/42068874_1098348046984739_396184948207261200_n-1024x1024.jpg'
     },
@@ -37,7 +37,7 @@ const DATA = [
     },
     {
         id: 7,
-        name: 'Tidur Malam',
+        name: 'Tidur',
         jam: '10-00 PM',
         image: 'https://cdn-asset.jawapos.com/wp-content/uploads/2019/01/susah-tidur-di-malam-hari-coba-lakukan-3_m_-640x420.jpg'
     }
