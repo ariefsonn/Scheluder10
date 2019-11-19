@@ -7,7 +7,7 @@ import Staja from './component/Staja'
 export default class App extends Component {
   render(){
     return(
-      <Menja/>
+      <Staja/>
     )
   }
 }
