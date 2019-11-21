@@ -3,6 +3,7 @@ import { Text, View, TextInput, TouchableOpacity, FlatList, ScrollView, Image } 
 
 import DATA from '../../assets/item'
 
+
 export default class Staja extends Component {
 
     constructor(props) {
@@ -17,9 +18,12 @@ export default class Staja extends Component {
     componentDidMount() { 
         var hours = new Date().getHours();
         let waktu = this.state.waktu
+        var audio = new Audio('../../assets/Wecker-sound.mp3')
 
         if (hours == waktu) {
-
+            audio.play()
+        }else{
+            audio.pause()
         }
     }
 
@@ -37,7 +41,7 @@ export default class Staja extends Component {
                                     <Text style={{ fontSize: 18 }}>{item.jam}</Text>
                                 </View>
                                 <View>
-                                <Image source={require('../../assets/alaram3.jpg')} style={{ height: 30, width: 30, marginLeft: 150, flexDirection: 'column', marginTop: 10 }}/>
+                                <Image source={require('../../assets/alaram3.jpg')} style={{ height: 30, width: 30, marginLeft: 140, flexDirection: 'column', marginTop: 10 }}/>
                                 </View>
                             </View>
                         )
